@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Tiger Martial Arts</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <a href="index.html" class="logo">
+            <div
+              class="tiger-logo"
+              style="
+                margin-right: 0.75rem;
+                display: inline-flex;
+                align-items: center;
+              "
+            >
+              <!-- Red Tiger Logo -->
+              <img
+                src="https://cdn.builder.io/api/v1/assets/365e874df8b3403e8d126c85a1ad8754/red-tiger-logo-simple-silhouette-vector-illustration_10944730-0c5ec3?format=webp&width=800"
+                alt="Tiger Martial Arts Logo"
+                style="width: 40px; height: 40px; object-fit: contain"
+              />
+            </div>
+            Tiger Martial Arts
+          </a>
+
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="classes.html" class="nav-link">Classes</a>
+            <a href="instructors.html" class="nav-link">Instructors</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+
+          <div class="nav-buttons">
+            <button onclick="openLoginModal()" class="btn btn-primary">
+              <i class="fas fa-user" style="margin-right: 0.5rem"></i>
+              Login
+            </button>
+          </div>
+
+          <button class="menu-toggle" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="classes.html" class="nav-link">Classes</a>
+          <a href="instructors.html" class="nav-link">Instructors</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">
+            <i class="fas fa-arrow-left" style="margin-right: 0.5rem"></i>
+            Back to Home
+          </a>
+        </div>
+        <h1 class="page-title">About Tiger Martial Arts</h1>
+        <p class="page-subtitle">
+          Discover our story, mission, and commitment to helping beginners
+          transform their lives through martial arts.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="grid md:grid-cols-2" style="align-items: center">
+          <div>
+            <h2
+              class="section-title"
+              style="text-align: left; margin: 0 0 2rem"
+            >
+              Our Story
+            </h2>
+            <p style="font-size: 1.125rem; margin-bottom: 1.5rem">
+              Founded in 2010, Iron Will Dojo began with a simple vision: create
+              a martial arts school where beginners feel welcome, supported, and
+              empowered to discover their potential.
+            </p>
+            <p style="color: var(--text-gray); margin-bottom: 1.5rem">
+              Our founder, Master Sarah Chen, recognized that many martial arts
+              schools were intimidating for newcomers. She wanted to create a
+              different kind of dojo - one where technique, character, and
+              personal growth mattered more than ego or competition.
+            </p>
+            <p style="color: var(--text-gray); margin-bottom: 2rem">
+              Today, we've helped over 2,000 students begin their martial arts
+              journey, from complete beginners to confident practitioners. Our
+              approach remains the same: patient instruction, supportive
+              community, and a focus on personal development.
+            </p>
+            <div style="display: flex; gap: 2rem; margin-bottom: 2rem">
+              <div class="text-center">
+                <div
+                  style="
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: var(--primary);
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  14+
+                </div>
+                <p style="font-size: 0.875rem; color: var(--text-gray)">
+                  Years of Service
+                </p>
+              </div>
+              <div class="text-center">
+                <div
+                  style="
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: var(--primary);
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  2000+
+                </div>
+                <p style="font-size: 0.875rem; color: var(--text-gray)">
+                  Students Trained
+                </p>
+              </div>
+              <div class="text-center">
+                <div
+                  style="
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: var(--primary);
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  500+
+                </div>
+                <p style="font-size: 0.875rem; color: var(--text-gray)">
+                  Active Members
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center">
+            <img
+              src="https://images.pexels.com/photos/6253303/pexels-photo-6253303.jpeg"
+              alt="Martial arts training at Iron Will Dojo"
+              style="
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 1rem;
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="section bg-gray">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Mission & Values</h2>
+          <p class="section-subtitle">
+            Everything we do is guided by our core mission to make martial arts
+            accessible, enjoyable, and transformative for beginners.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3">
+          <div class="card">
+            <div class="card-header">
+              <div class="feature-icon primary">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3 class="card-title">Beginner-First Approach</h3>
+            </div>
+            <div class="card-content">
+              <p class="card-description">
+                We design every class, program, and interaction with beginners
+                in mind. No intimidation, no pressure - just supportive guidance
+                at your own pace.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="feature-icon gold">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 class="card-title">Community Over Competition</h3>
+            </div>
+            <div class="card-content">
+              <p class="card-description">
+                While we respect martial arts traditions, we prioritize building
+                a supportive community where students help each other grow and
+                succeed.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="feature-icon green">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <h3 class="card-title">Personal Growth Focus</h3>
+            </div>
+            <div class="card-content">
+              <p class="card-description">
+                Beyond physical techniques, we emphasize character development,
+                confidence building, and life skills that extend far beyond the
+                dojo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Facilities -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Facilities</h2>
+          <p class="section-subtitle">
+            Modern, clean, and safe training spaces designed specifically for
+            martial arts instruction and student comfort.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">
+                <i
+                  class="fas fa-home"
+                  style="color: var(--primary); margin-right: 0.5rem"
+                ></i>
+                Main Training Hall
+              </h3>
+              <p class="card-description" style="margin-bottom: 1rem">
+                Our spacious 2,000 sq ft main training area features
+                high-quality mats, mirrors, and professional-grade equipment for
+                all martial arts disciplines.
+              </p>
+              <ul class="benefits-list">
+                <li>
+                  <i class="fas fa-check-circle"></i> Climate-controlled
+                  environment
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Professional-grade mats
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Wall-to-wall mirrors
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Sound system for
+                  instruction
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">
+                <i
+                  class="fas fa-boxing-glove"
+                  style="color: var(--gold); margin-right: 0.5rem"
+                ></i>
+                Equipment & Gear
+              </h3>
+              <p class="card-description" style="margin-bottom: 1rem">
+                We provide all necessary training equipment for beginners,
+                including protective gear, training weapons, and practice
+                equipment.
+              </p>
+              <ul class="benefits-list">
+                <li>
+                  <i class="fas fa-check-circle"></i> Heavy bags and speed bags
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Thai pads and focus mitts
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Protective sparring gear
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Traditional training
+                  weapons
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">
+                <i
+                  class="fas fa-users"
+                  style="color: var(--primary); margin-right: 0.5rem"
+                ></i>
+                Student Amenities
+              </h3>
+              <p class="card-description" style="margin-bottom: 1rem">
+                Comfortable changing areas, gear storage, and viewing area for
+                family members to watch classes in progress.
+              </p>
+              <ul class="benefits-list">
+                <li>
+                  <i class="fas fa-check-circle"></i> Clean changing rooms
+                </li>
+                <li><i class="fas fa-check-circle"></i> Secure gear storage</li>
+                <li><i class="fas fa-check-circle"></i> Parent viewing area</li>
+                <li><i class="fas fa-check-circle"></i> Water station</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 class="card-title">
+                <i
+                  class="fas fa-shield-alt"
+                  style="color: var(--green); margin-right: 0.5rem"
+                ></i>
+                Safety & Cleanliness
+              </h3>
+              <p class="card-description" style="margin-bottom: 1rem">
+                We maintain the highest standards of cleanliness and safety to
+                ensure a healthy training environment for all students.
+              </p>
+              <ul class="benefits-list">
+                <li>
+                  <i class="fas fa-check-circle"></i> Daily equipment
+                  sanitization
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Air filtration system
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> First aid certified staff
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Safety equipment provided
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Philosophy -->
+    <section class="section bg-gray">
+      <div class="container">
+        <div class="grid md:grid-cols-2" style="align-items: center">
+          <div style="text-align: center">
+            <div
+              style="
+                width: 12rem;
+                height: 12rem;
+                background: linear-gradient(
+                  135deg,
+                  var(--primary),
+                  var(--primary-dark)
+                );
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 2rem;
+              "
+            >
+              <i
+                class="fas fa-yin-yang"
+                style="font-size: 4rem; color: var(--white)"
+              ></i>
+            </div>
+          </div>
+          <div>
+            <h2
+              class="section-title"
+              style="text-align: left; margin: 0 0 2rem"
+            >
+              Our Teaching Philosophy
+            </h2>
+            <p style="font-size: 1.125rem; margin-bottom: 1.5rem">
+              <strong>Respect • Discipline • Growth • Community</strong>
+            </p>
+            <p style="color: var(--text-gray); margin-bottom: 1.5rem">
+              We believe martial arts should build character first, technique
+              second. Our approach emphasizes respect for others,
+              self-discipline, continuous improvement, and mutual support among
+              students.
+            </p>
+            <p style="color: var(--text-gray); margin-bottom: 1.5rem">
+              Every student progresses at their own pace. We celebrate small
+              victories, encourage effort over perfection, and create an
+              environment where making mistakes is part of the learning process.
+            </p>
+            <div class="grid grid-cols-2" style="gap: 1rem">
+              <div>
+                <h4 style="font-weight: 600; margin-bottom: 0.5rem">
+                  Traditional Values
+                </h4>
+                <ul style="font-size: 0.875rem; color: var(--text-gray)">
+                  <li>• Respect for instructors and peers</li>
+                  <li>• Discipline in training and life</li>
+                  <li>• Humility and continuous learning</li>
+                </ul>
+              </div>
+              <div>
+                <h4 style="font-weight: 600; margin-bottom: 0.5rem">
+                  Modern Approach
+                </h4>
+                <ul style="font-size: 0.875rem; color: var(--text-gray)">
+                  <li>• Individual learning styles</li>
+                  <li>• Positive reinforcement</li>
+                  <li>• Safe, supportive environment</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Impact -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Community Impact</h2>
+          <p class="section-subtitle">
+            We're proud to be more than just a martial arts school - we're an
+            active part of our community.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3">
+          <div class="text-center">
+            <div class="feature-icon primary">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h3 class="card-title">Community Outreach</h3>
+            <p class="card-description">
+              We partner with local schools and community centers to provide
+              free self-defense workshops and anti-bullying programs for youth.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="feature-icon gold">
+              <i class="fas fa-ribbon"></i>
+            </div>
+            <h3 class="card-title">Charity Events</h3>
+            <p class="card-description">
+              Our annual tournament and demonstration events raise funds for
+              local charities, contributing over $25,000 to community causes.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="feature-icon green">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="card-title">Scholarship Program</h3>
+            <p class="card-description">
+              We offer need-based scholarships to ensure martial arts training
+              is accessible to families regardless of financial circumstances.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="section bg-gray">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Awards & Recognition</h2>
+          <p class="section-subtitle">
+            We're honored to be recognized for our commitment to excellence in
+            martial arts instruction and community service.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2">
+          <div class="card">
+            <div class="card-content">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 1rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                <div
+                  style="
+                    width: 3rem;
+                    height: 3rem;
+                    background: var(--gold);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="fas fa-trophy"
+                    style="color: var(--white); font-size: 1.5rem"
+                  ></i>
+                </div>
+                <div>
+                  <h4 style="font-weight: 600; margin-bottom: 0.25rem">
+                    Best Martial Arts School 2023
+                  </h4>
+                  <p
+                    style="
+                      font-size: 0.875rem;
+                      color: var(--text-gray);
+                      margin: 0;
+                    "
+                  >
+                    Fitness City Community Awards
+                  </p>
+                </div>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--text-gray)">
+                Recognized for outstanding instruction, community involvement,
+                and student satisfaction ratings.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 1rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                <div
+                  style="
+                    width: 3rem;
+                    height: 3rem;
+                    background: var(--primary);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="fas fa-star"
+                    style="color: var(--white); font-size: 1.5rem"
+                  ></i>
+                </div>
+                <div>
+                  <h4 style="font-weight: 600; margin-bottom: 0.25rem">
+                    Excellence in Youth Programs
+                  </h4>
+                  <p
+                    style="
+                      font-size: 0.875rem;
+                      color: var(--text-gray);
+                      margin: 0;
+                    "
+                  >
+                    State Martial Arts Association
+                  </p>
+                </div>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--text-gray)">
+                Honored for innovative youth programs and positive impact on
+                child development through martial arts.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 1rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                <div
+                  style="
+                    width: 3rem;
+                    height: 3rem;
+                    background: #16a34a;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="fas fa-heart"
+                    style="color: var(--white); font-size: 1.5rem"
+                  ></i>
+                </div>
+                <div>
+                  <h4 style="font-weight: 600; margin-bottom: 0.25rem">
+                    Community Service Award
+                  </h4>
+                  <p
+                    style="
+                      font-size: 0.875rem;
+                      color: var(--text-gray);
+                      margin: 0;
+                    "
+                  >
+                    Mayor's Office, 2022
+                  </p>
+                </div>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--text-gray)">
+                Acknowledged for outstanding community outreach and charitable
+                contributions to local organizations.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 1rem;
+                  margin-bottom: 1rem;
+                "
+              >
+                <div
+                  style="
+                    width: 3rem;
+                    height: 3rem;
+                    background: var(--gold);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="fas fa-thumbs-up"
+                    style="color: var(--white); font-size: 1.5rem"
+                  ></i>
+                </div>
+                <div>
+                  <h4 style="font-weight: 600; margin-bottom: 0.25rem">
+                    5-Star Student Satisfaction
+                  </h4>
+                  <p
+                    style="
+                      font-size: 0.875rem;
+                      color: var(--text-gray);
+                      margin: 0;
+                    "
+                  >
+                    Independent Review Platform
+                  </p>
+                </div>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--text-gray)">
+                Consistently rated 5 stars by students and parents for
+                instruction quality, facility, and overall experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+      <div class="container">
+        <h2 class="section-title">Ready to Join Our Community?</h2>
+        <p class="section-subtitle">
+          Experience the Iron Will Dojo difference for yourself. Visit our
+          facilities, meet our instructors, and see why we're the perfect place
+          to begin your martial arts journey.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-secondary btn-lg"
+            >Schedule a Tour</a
+          >
+          <a href="contact.html" class="btn btn-outline-white btn-lg">
+            Book Free Trial Class
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div style="display: flex; align-items: center; gap: 0.75rem">
+            <!-- Tiger logo in modal -->
+            <img
+              src="https://cdn.builder.io/api/v1/assets/365e874df8b3403e8d126c85a1ad8754/red-tiger-logo-simple-silhouette-vector-illustration_10944730-0c5ec3?format=webp&width=800"
+              alt="Tiger Martial Arts Logo"
+              style="width: 24px; height: 24px; object-fit: contain"
+            />
+            <h2 id="modalTitle">Sign in to Tiger Martial Arts</h2>
+          </div>
+          <button class="modal-close" onclick="closeLoginModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="loginForm" class="auth-form">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="loginEmail"
+                  class="form-input"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="loginPassword"
+                  class="form-input"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%; margin-bottom: 1rem"
+              >
+                <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem"></i>
+                Sign In
+              </button>
+            </form>
+            <div class="auth-divider">
+              <span>New to Tiger Martial Arts?</span>
+            </div>
+            <button
+              onclick="switchToSignup()"
+              class="btn btn-outline"
+              style="width: 100%"
+            >
+              <i class="fas fa-user-plus" style="margin-right: 0.5rem"></i>
+              Create Account
+            </button>
+          </div>
+
+          <div id="signupForm" class="auth-form" style="display: none">
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="signupFirstName" class="form-label"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="signupFirstName"
+                    class="form-input"
+                    placeholder="First name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="signupLastName" class="form-label"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="signupLastName"
+                    class="form-input"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="signupEmail" class="form-label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="signupEmail"
+                  class="form-input"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="signupPassword"
+                  class="form-input"
+                  placeholder="Create a password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="signupConfirmPassword" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  id="signupConfirmPassword"
+                  class="form-input"
+                  placeholder="Confirm your password"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%; margin-bottom: 1rem"
+              >
+                <i class="fas fa-user-plus" style="margin-right: 0.5rem"></i>
+                Create Account
+              </button>
+            </form>
+            <div class="auth-divider">
+              <span>Already have an account?</span>
+            </div>
+            <button
+              onclick="switchToLogin()"
+              class="btn btn-outline"
+              style="width: 100%"
+            >
+              <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem"></i>
+              Sign In Instead
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Tiger Martial Arts</h3>
+            <p>
+              Empowering beginners to discover their martial arts potential
+              through expert instruction and supportive community.
+            </p>
+          </div>
+
+          <div>
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="classes.html">Karate</a></li>
+              <li><a href="classes.html">Brazilian Jiu-Jitsu</a></li>
+              <li><a href="classes.html">Muay Thai</a></li>
+              <li><a href="classes.html">Taekwondo</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Contact Info</h4>
+            <div class="footer-contact">
+              <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Martial Arts Ave, Fitness City</span>
+              </div>
+              <div>
+                <i class="fas fa-phone"></i>
+                <span>(555) 123-4567</span>
+              </div>
+              <div>
+                <i class="fas fa-envelope"></i>
+                <span>info@ironwilldojo.com</span>
+              </div>
+              <div>
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 6AM-10PM, Sat-Sun: 8AM-8PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Tiger Martial Arts. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

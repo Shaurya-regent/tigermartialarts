@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiger Martial Arts - Martial Arts for Beginners</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <a href="index.html" class="logo">
+            <div
+              class="tiger-logo"
+              style="
+                margin-right: 0.75rem;
+                display: inline-flex;
+                align-items: center;
+              "
+            >
+              <!-- Red Tiger Logo -->
+              <img
+                src="https://cdn.builder.io/api/v1/assets/365e874df8b3403e8d126c85a1ad8754/red-tiger-logo-simple-silhouette-vector-illustration_10944730-0c5ec3?format=webp&width=800"
+                alt="Tiger Martial Arts Logo"
+                style="width: 40px; height: 40px; object-fit: contain"
+              />
+            </div>
+            Tiger Martial Arts
+          </a>
+
+          <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="classes.html" class="nav-link">Classes</a>
+            <a href="instructors.html" class="nav-link">Instructors</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+
+          <div class="nav-buttons">
+            <button onclick="openLoginModal()" class="btn btn-primary">
+              <i class="fas fa-user" style="margin-right: 0.5rem"></i>
+              Login
+            </button>
+          </div>
+
+          <button class="menu-toggle" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="classes.html" class="nav-link">Classes</a>
+          <a href="instructors.html" class="nav-link">Instructors</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="badge">
+              <i class="fas fa-fist-raised" style="margin-right: 0.5rem"></i>
+              Perfect for Beginners
+            </div>
+            <h1 class="hero-title">
+              Begin Your<br />
+              <span class="text-primary">Martial Arts</span><br />
+              Journey Today
+            </h1>
+            <p class="hero-subtitle">
+              Discover the power within you. Learn from expert instructors in
+              Karate, Jiu-Jitsu, Muay Thai, and Taekwondo. No experience
+              required - just bring your determination.
+            </p>
+            <div class="hero-buttons">
+              <a href="contact.html" class="btn btn-primary btn-lg">
+                Start Free Trial
+                <i class="fas fa-chevron-right"></i>
+              </a>
+              <a href="contact.html" class="btn btn-outline btn-lg">
+                <i class="fas fa-calendar"></i>
+                Schedule Tour
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <i class="fas fa-star" style="color: var(--gold)"></i>
+                <span>4.9/5 Rating</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-users" style="color: var(--primary)"></i>
+                <span>500+ Students</span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-award" style="color: var(--gold)"></i>
+                <span>Award Winning</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="https://images.pexels.com/photos/7045466/pexels-photo-7045466.jpeg"
+              alt="Martial arts instructor teaching students"
+            />
+            <div class="hero-feature-card">
+              <i class="fas fa-bullseye"></i>
+              <div>
+                <div style="font-weight: 600">Beginner Friendly</div>
+                <div style="font-size: 0.875rem; color: var(--text-gray)">
+                  Start at any level
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Martial Arts Disciplines -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Choose Your Path</h2>
+          <p class="section-subtitle">
+            We offer four distinct martial arts disciplines, each with unique
+            benefits. Perfect for beginners looking to build confidence,
+            fitness, and life skills.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-4 md:grid-cols-2">
+          <div class="card">
+            <div class="card-header">
+              <div class="art-icon bg-karate">
+                <i class="fas fa-fist-raised"></i>
+              </div>
+              <h3 class="card-title">Karate</h3>
+              <p class="card-description">
+                Traditional striking art focusing on discipline, respect, and
+                powerful techniques.
+              </p>
+            </div>
+            <div class="card-content">
+              <img
+                src="https://images.pexels.com/photos/7045589/pexels-photo-7045589.jpeg"
+                alt="Karate students bowing in dojo"
+                style="
+                  width: 100%;
+                  height: 534px;
+                  object-fit: cover;
+                  border-radius: 0.5rem;
+                  margin-bottom: 1rem;
+                "
+              />
+              <h4 class="benefits-title">Benefits:</h4>
+              <ul class="benefits-list">
+                <li><i class="fas fa-bolt"></i> Self-discipline</li>
+                <li><i class="fas fa-bolt"></i> Physical fitness</li>
+                <li><i class="fas fa-bolt"></i> Mental focus</li>
+                <li><i class="fas fa-bolt"></i> Self-defense</li>
+              </ul>
+              <a href="classes.html" class="btn btn-outline" style="width: 100%"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="art-icon bg-bjj">
+                <i class="fas fa-hand-rock"></i>
+              </div>
+              <h3 class="card-title">Brazilian Jiu-Jitsu</h3>
+              <p class="card-description">
+                Ground fighting and grappling art emphasizing technique over
+                strength.
+              </p>
+            </div>
+            <div class="card-content">
+              <img
+                src="https://images.pexels.com/photos/8612496/pexels-photo-8612496.jpeg"
+                alt="Brazilian Jiu-Jitsu training session"
+                style="
+                  width: 100%;
+                  height: 666px;
+                  object-fit: cover;
+                  border-radius: 0.5rem;
+                  margin-bottom: 1rem;
+                  padding-top: 3px;
+                "
+              />
+              <h4 class="benefits-title">Benefits:</h4>
+              <ul class="benefits-list">
+                <li><i class="fas fa-bolt"></i> Problem solving</li>
+                <li><i class="fas fa-bolt"></i> Flexibility</li>
+                <li><i class="fas fa-bolt"></i> Core strength</li>
+                <li><i class="fas fa-bolt"></i> Patience</li>
+              </ul>
+              <a href="classes.html" class="btn btn-outline" style="width: 100%"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="art-icon bg-muaythai">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h3 class="card-title">Muay Thai</h3>
+              <p class="card-description">
+                The art of eight limbs - using fists, elbows, knees, and shins.
+              </p>
+            </div>
+            <div class="card-content">
+              <img
+                src="https://images.pexels.com/photos/19406283/pexels-photo-19406283.jpeg"
+                alt="Muay Thai pad training session"
+                style="
+                  width: 100%;
+                  height: 655px;
+                  object-fit: cover;
+                  border-radius: 0.5rem;
+                  margin-bottom: 1rem;
+                "
+              />
+              <h4 class="benefits-title">Benefits:</h4>
+              <ul class="benefits-list">
+                <li><i class="fas fa-bolt"></i> Cardio fitness</li>
+                <li><i class="fas fa-bolt"></i> Coordination</li>
+                <li><i class="fas fa-bolt"></i> Power</li>
+                <li><i class="fas fa-bolt"></i> Confidence</li>
+              </ul>
+              <a href="classes.html" class="btn btn-outline" style="width: 100%"
+                >Learn More</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="art-icon bg-taekwondo">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3 class="card-title">Taekwondo</h3>
+              <p class="card-description">
+                Korean martial art known for dynamic kicks and Olympic sport
+                competition.
+              </p>
+            </div>
+            <div class="card-content">
+              <img
+                src="https://images.pexels.com/photos/7045758/pexels-photo-7045758.jpeg"
+                alt="Taekwondo training with bo staff"
+                style="
+                  width: 100%;
+                  height: 567px;
+                  object-fit: cover;
+                  border-radius: 0.5rem;
+                  margin-bottom: 1rem;
+                "
+              />
+              <h4 class="benefits-title">Benefits:</h4>
+              <ul class="benefits-list">
+                <li><i class="fas fa-bolt"></i> Flexibility</li>
+                <li><i class="fas fa-bolt"></i> Balance</li>
+                <li><i class="fas fa-bolt"></i> Speed</li>
+                <li><i class="fas fa-bolt"></i> Precision</li>
+              </ul>
+              <a href="classes.html" class="btn btn-outline" style="width: 100%"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section bg-gray">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Tiger Martial Arts?</h2>
+          <p class="section-subtitle">
+            We've created the perfect environment for beginners to start their
+            martial arts journey with confidence and support.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3">
+          <div class="text-center">
+            <div class="feature-icon primary">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="card-title">Beginner-Focused Classes</h3>
+            <p class="card-description">
+              Specially designed classes for newcomers with patient, experienced
+              instructors who understand the learning process.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="feature-icon gold">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="card-title">Safe Learning Environment</h3>
+            <p class="card-description">
+              Modern facilities with proper safety equipment and controlled
+              training environments suitable for all ages and skill levels.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="feature-icon green">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3 class="card-title">Expert Instruction</h3>
+            <p class="card-description">
+              Learn from certified masters and black belts with decades of
+              experience in teaching and competition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Explore Our Dojo</h2>
+          <p class="section-subtitle">
+            Learn more about our classes, instructors, and how to get started
+            with your martial arts journey.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3">
+          <div class="card">
+            <div class="card-header">
+              <div class="feature-icon primary">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h3 class="card-title">Our Classes</h3>
+              <p class="card-description">
+                Explore our comprehensive class schedule and program options
+                designed specifically for beginners.
+              </p>
+            </div>
+            <div class="card-content">
+              <a href="classes.html" class="btn btn-primary" style="width: 100%"
+                >View Classes</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="feature-icon gold">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3 class="card-title">Meet Our Instructors</h3>
+              <p class="card-description">
+                Get to know our experienced instructors who are passionate about
+                teaching martial arts to beginners.
+              </p>
+            </div>
+            <div class="card-content">
+              <a
+                href="instructors.html"
+                class="btn btn-primary"
+                style="width: 100%"
+                >Meet Instructors</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="feature-icon green">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3 class="card-title">Get Started Today</h3>
+              <p class="card-description">
+                Ready to begin? Contact us to schedule your free trial class or
+                tour our facilities.
+              </p>
+            </div>
+            <div class="card-content">
+              <a href="contact.html" class="btn btn-primary" style="width: 100%"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">See Our Dojo in Action</h2>
+          <p class="section-subtitle">
+            Take a visual tour of our training facilities and see our students
+            in action across all martial arts disciplines.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3" style="gap: 1.5rem">
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 1rem;
+              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <img
+              src="https://images.pexels.com/photos/8744810/pexels-photo-8744810.jpeg"
+              alt="Training gym with dramatic lighting"
+              style="
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                transition: transform 0.3s;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+            <div
+              style="
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+                color: white;
+                padding: 1.5rem 1rem 1rem;
+              "
+            >
+              <h3 style="font-weight: 600; margin-bottom: 0.25rem">
+                Professional Equipment
+              </h3>
+              <p style="font-size: 0.875rem; opacity: 0.9; margin: 0">
+                State-of-the-art training facilities
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 1rem;
+              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <img
+              src="https://images.pexels.com/photos/7045466/pexels-photo-7045466.jpeg"
+              alt="Instructor teaching martial arts to students"
+              style="
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                transition: transform 0.3s;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+            <div
+              style="
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+                color: white;
+                padding: 1.5rem 1rem 1rem;
+              "
+            >
+              <h3 style="font-weight: 600; margin-bottom: 0.25rem">
+                Expert Instruction
+              </h3>
+              <p style="font-size: 0.875rem; opacity: 0.9; margin: 0">
+                Personalized guidance for every student
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 1rem;
+              box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <img
+              src="https://images.pexels.com/photos/6253303/pexels-photo-6253303.jpeg"
+              alt="Martial arts sparring session"
+              style="
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                transition: transform 0.3s;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+            <div
+              style="
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+                color: white;
+                padding: 1.5rem 1rem 1rem;
+              "
+            >
+              <h3 style="font-weight: 600; margin-bottom: 0.25rem">
+                Active Training
+              </h3>
+              <p style="font-size: 0.875rem; opacity: 0.9; margin: 0">
+                Dynamic classes for all skill levels
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 3rem">
+          <a href="about.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-images" style="margin-right: 0.5rem"></i>
+            View Our Facilities
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+      <div class="container">
+        <h2 class="section-title">Ready to Start Your Journey?</h2>
+        <p class="section-subtitle">
+          Join hundreds of students who've discovered their inner strength. Try
+          your first class absolutely free with no commitment required.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-secondary btn-lg"
+            >Claim Free Trial</a
+          >
+          <a href="tel:5551234567" class="btn btn-outline-white btn-lg">
+            Call Now: (555) 123-4567
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div style="display: flex; align-items: center; gap: 0.75rem">
+            <!-- Tiger logo in modal -->
+            <img
+              src="https://cdn.builder.io/api/v1/assets/365e874df8b3403e8d126c85a1ad8754/red-tiger-logo-simple-silhouette-vector-illustration_10944730-0c5ec3?format=webp&width=800"
+              alt="Tiger Martial Arts Logo"
+              style="width: 24px; height: 24px; object-fit: contain"
+            />
+            <h2 id="modalTitle">Sign in to Tiger Martial Arts</h2>
+          </div>
+          <button class="modal-close" onclick="closeLoginModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="loginForm" class="auth-form">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="loginEmail"
+                  class="form-input"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="loginPassword"
+                  class="form-input"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%; margin-bottom: 1rem"
+              >
+                <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem"></i>
+                Sign In
+              </button>
+            </form>
+            <div class="auth-divider">
+              <span>New to Tiger Martial Arts?</span>
+            </div>
+            <button
+              onclick="switchToSignup()"
+              class="btn btn-outline"
+              style="width: 100%"
+            >
+              <i class="fas fa-user-plus" style="margin-right: 0.5rem"></i>
+              Create Account
+            </button>
+          </div>
+
+          <div id="signupForm" class="auth-form" style="display: none">
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="signupFirstName" class="form-label"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="signupFirstName"
+                    class="form-input"
+                    placeholder="First name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="signupLastName" class="form-label"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="signupLastName"
+                    class="form-input"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="signupEmail" class="form-label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="signupEmail"
+                  class="form-input"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="signupPassword"
+                  class="form-input"
+                  placeholder="Create a password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="signupConfirmPassword" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  id="signupConfirmPassword"
+                  class="form-input"
+                  placeholder="Confirm your password"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%; margin-bottom: 1rem"
+              >
+                <i class="fas fa-user-plus" style="margin-right: 0.5rem"></i>
+                Create Account
+              </button>
+            </form>
+            <div class="auth-divider">
+              <span>Already have an account?</span>
+            </div>
+            <button
+              onclick="switchToLogin()"
+              class="btn btn-outline"
+              style="width: 100%"
+            >
+              <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem"></i>
+              Sign In Instead
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Tiger Martial Arts</h3>
+            <p>
+              Empowering beginners to discover their martial arts potential
+              through expert instruction and supportive community.
+            </p>
+          </div>
+
+          <div>
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="classes.html">Karate</a></li>
+              <li><a href="classes.html">Brazilian Jiu-Jitsu</a></li>
+              <li><a href="classes.html">Muay Thai</a></li>
+              <li><a href="classes.html">Taekwondo</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Contact Info</h4>
+            <div class="footer-contact">
+              <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Martial Arts Ave, Fitness City</span>
+              </div>
+              <div>
+                <i class="fas fa-phone"></i>
+                <span>(555) 123-4567</span>
+              </div>
+              <div>
+                <i class="fas fa-envelope"></i>
+                <span>info@ironwilldojo.com</span>
+              </div>
+              <div>
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 6AM-10PM, Sat-Sun: 8AM-8PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Tiger Martial Arts. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  
+
+
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCt4jTVnliPtrTA_X02iiqOibWLm7iTMe0",
+    authDomain: "project-a-a58e2.firebaseapp.com",
+    projectId: "project-a-a58e2",
+    storageBucket: "project-a-a58e2.firebasestorage.app",
+    messagingSenderId: "194581199557",
+    appId: "1:194581199557:web:9b7abc0a4dd7c2e67dceac"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  document.querySelector("#loginForm form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        alert("Logged in as: " + userCredential.user.email);
+        closeLoginModal();
+      })
+      .catch((error) => {
+        alert("Login failed: " + error.message);
+      });
+  });
+
+  document.querySelector("#signupForm form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = document.getElementById("signupEmail").value;
+    const password = document.getElementById("signupPassword").value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        alert("Signed up as: " + userCredential.user.email);
+        closeLoginModal();
+      })
+      .catch((error) => {
+        alert("Signup failed: " + error.message);
+      });
+  });
+</script>
+
+</body>
+</html>

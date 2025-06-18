@@ -1,0 +1,1344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes & Programs - Tiger Martial Arts</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-container">
+          <a href="index.html" class="logo">
+            <div
+              class="tiger-logo"
+              style="
+                margin-right: 0.75rem;
+                display: inline-flex;
+                align-items: center;
+              "
+            >
+              <!-- Red Tiger Logo -->
+              <img
+                src="https://cdn.builder.io/api/v1/assets/365e874df8b3403e8d126c85a1ad8754/red-tiger-logo-simple-silhouette-vector-illustration_10944730-0c5ec3?format=webp&width=800"
+                alt="Tiger Martial Arts Logo"
+                style="width: 40px; height: 40px; object-fit: contain"
+              />
+            </div>
+            Tiger Martial Arts
+          </a>
+
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="classes.html" class="nav-link active">Classes</a>
+            <a href="instructors.html" class="nav-link">Instructors</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+
+          <div class="nav-buttons">
+            <button onclick="openLoginModal()" class="btn btn-primary">
+              <i class="fas fa-user" style="margin-right: 0.5rem"></i>
+              Login
+            </button>
+          </div>
+
+          <button class="menu-toggle" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="classes.html" class="nav-link">Classes</a>
+          <a href="instructors.html" class="nav-link">Instructors</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">
+            <i class="fas fa-arrow-left" style="margin-right: 0.5rem"></i>
+            Back to Home
+          </a>
+        </div>
+        <h1 class="page-title">Classes & Programs</h1>
+        <p class="page-subtitle">
+          Explore our comprehensive martial arts programs designed specifically
+          for beginners. Choose your path and start your journey today.
+        </p>
+      </div>
+    </section>
+
+    <!-- Programs Overview -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Membership Options</h2>
+          <p class="section-subtitle">
+            Choose the program that fits your schedule and goals. All programs
+            include expert instruction and beginner-friendly environment.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3">
+          <div class="card program-card">
+            <div class="program-header">
+              <div class="program-stripe karate"></div>
+              <div class="card-header" style="padding-top: 2rem">
+                <h3 class="card-title" style="font-size: 1.5rem">
+                  Beginner's Foundation
+                </h3>
+                <p class="card-description">
+                  Perfect entry point for complete beginners. Learn basics of
+                  all four martial arts.
+                </p>
+                <div class="program-price">$120/month</div>
+                <div
+                  class="badge"
+                  style="background: var(--bg-gray); color: var(--text-dark)"
+                >
+                  8 weeks
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <ul class="check-list">
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>2 classes per week</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Basic equipment included</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Personal progress tracking</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Beginner-only environment</span>
+                </li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%"
+                >Choose This Program</a
+              >
+            </div>
+          </div>
+
+          <div class="card program-card">
+            <div class="program-header">
+              <div class="program-stripe bjj"></div>
+              <div class="card-header" style="padding-top: 2rem">
+                <h3 class="card-title" style="font-size: 1.5rem">
+                  All-Access Membership
+                </h3>
+                <p class="card-description">
+                  Unlimited access to all classes and martial arts disciplines.
+                </p>
+                <div class="program-price">$180/month</div>
+                <div
+                  class="badge"
+                  style="background: var(--bg-gray); color: var(--text-dark)"
+                >
+                  Monthly
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <ul class="check-list">
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Unlimited classes</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>All martial arts access</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Open mat privileges</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Free equipment storage</span>
+                </li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%"
+                >Choose This Program</a
+              >
+            </div>
+          </div>
+
+          <div class="card program-card">
+            <div class="program-header">
+              <div class="program-stripe muaythai"></div>
+              <div class="card-header" style="padding-top: 2rem">
+                <h3 class="card-title" style="font-size: 1.5rem">
+                  Drop-In Classes
+                </h3>
+                <p class="card-description">
+                  Try individual classes without commitment.
+                </p>
+                <div class="program-price">$25/class</div>
+                <div
+                  class="badge"
+                  style="background: var(--bg-gray); color: var(--text-dark)"
+                >
+                  Per class
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <ul class="check-list">
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Single class access</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Equipment rental</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Beginner instruction</span>
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i>
+                  <span>No commitment required</span>
+                </li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%"
+                >Choose This Program</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Martial Arts Details -->
+    <section class="section bg-gray">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Martial Arts Programs</h2>
+          <p class="section-subtitle">
+            Learn about each martial art we offer and what makes them special
+            for beginners.
+          </p>
+        </div>
+
+        <div class="tabs">
+          <div class="tab-list">
+            <button class="tab-trigger active" data-target="karate-content">
+              Karate
+            </button>
+            <button class="tab-trigger" data-target="bjj-content">
+              Jiu-Jitsu
+            </button>
+            <button class="tab-trigger" data-target="muaythai-content">
+              Muay Thai
+            </button>
+            <button class="tab-trigger" data-target="taekwondo-content">
+              Taekwondo
+            </button>
+          </div>
+
+          <div id="karate-content" class="tab-content active">
+            <div class="card">
+              <div class="card-header">
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div style="font-size: 3rem; color: var(--primary)">
+                    <i class="fas fa-fist-raised"></i>
+                  </div>
+                  <div style="text-align: left">
+                    <h3 class="card-title" style="font-size: 1.5rem">Karate</h3>
+                    <p class="card-description">
+                      Traditional Japanese martial art emphasizing striking
+                      techniques, kata (forms), and character development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="grid md:grid-cols-2">
+                  <div>
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-heart"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      Benefits for Beginners
+                    </h4>
+                    <ul class="benefits-list">
+                      <li>
+                        <i class="fas fa-bolt"></i> Develops discipline and
+                        respect
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Improves physical fitness
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Builds mental focus and
+                        concentration
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Teaches practical
+                        self-defense
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Enhances flexibility and
+                        coordination
+                      </li>
+                    </ul>
+
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin: 2rem 0 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-bullseye"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      What to Expect
+                    </h4>
+                    <ul class="check-list">
+                      <li>
+                        <i class="fas fa-check-circle"></i> Warm-up and
+                        stretching
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Basic technique
+                        practice
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Kata (forms)
+                        training
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Partner drills
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Cool-down and
+                        meditation
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-brain"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      For Beginners
+                    </h4>
+                    <p style="color: var(--text-gray); margin-bottom: 1.5rem">
+                      Our karate program starts with basic stances, blocks, and
+                      strikes. You'll learn traditional forms (kata) and
+                      gradually progress through the belt ranking system.
+                    </p>
+
+                    <div
+                      style="
+                        background: var(--primary-light);
+                        padding: 1.5rem;
+                        border-radius: 0.5rem;
+                      "
+                    >
+                      <h5 style="font-weight: 600; margin-bottom: 0.75rem">
+                        Ready to Start Karate?
+                      </h5>
+                      <p
+                        style="
+                          font-size: 0.875rem;
+                          color: var(--text-gray);
+                          margin-bottom: 1rem;
+                        "
+                      >
+                        Join our beginner-friendly Karate classes and experience
+                        the benefits for yourself.
+                      </p>
+                      <a
+                        href="contact.html"
+                        class="btn btn-primary"
+                        style="width: 100%"
+                      >
+                        Book Free Trial Class
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="bjj-content" class="tab-content">
+            <div class="card">
+              <div class="card-header">
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div style="font-size: 3rem; color: #2563eb">
+                    <i class="fas fa-hand-rock"></i>
+                  </div>
+                  <div style="text-align: left">
+                    <h3 class="card-title" style="font-size: 1.5rem">
+                      Brazilian Jiu-Jitsu
+                    </h3>
+                    <p class="card-description">
+                      Ground-based martial art focusing on leverage, technique,
+                      and problem-solving through grappling.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="grid md:grid-cols-2">
+                  <div>
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-heart"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      Benefits for Beginners
+                    </h4>
+                    <ul class="benefits-list">
+                      <li>
+                        <i class="fas fa-bolt"></i> Builds mental
+                        problem-solving skills
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Increases core strength and
+                        flexibility
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Develops patience and
+                        perseverance
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Excellent cardiovascular
+                        workout
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Builds confidence through
+                        technique
+                      </li>
+                    </ul>
+
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin: 2rem 0 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-bullseye"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      What to Expect
+                    </h4>
+                    <ul class="check-list">
+                      <li>
+                        <i class="fas fa-check-circle"></i> Proper falling and
+                        rolling
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Basic positions and
+                        transitions
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Escape techniques
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Controlled sparring
+                        (rolling)
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Technique
+                        demonstration and practice
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-brain"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      For Beginners
+                    </h4>
+                    <p style="color: var(--text-gray); margin-bottom: 1.5rem">
+                      BJJ for beginners focuses on basic positions, escapes, and
+                      submissions. We emphasize safety and controlled practice
+                      in a supportive environment.
+                    </p>
+
+                    <div
+                      style="
+                        background: var(--primary-light);
+                        padding: 1.5rem;
+                        border-radius: 0.5rem;
+                      "
+                    >
+                      <h5 style="font-weight: 600; margin-bottom: 0.75rem">
+                        Ready to Start BJJ?
+                      </h5>
+                      <p
+                        style="
+                          font-size: 0.875rem;
+                          color: var(--text-gray);
+                          margin-bottom: 1rem;
+                        "
+                      >
+                        Join our beginner-friendly BJJ classes and experience
+                        the benefits for yourself.
+                      </p>
+                      <a
+                        href="contact.html"
+                        class="btn btn-primary"
+                        style="width: 100%"
+                      >
+                        Book Free Trial Class
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="muaythai-content" class="tab-content">
+            <div class="card">
+              <div class="card-header">
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div style="font-size: 3rem; color: var(--gold)">
+                    <i class="fas fa-fire"></i>
+                  </div>
+                  <div style="text-align: left">
+                    <h3 class="card-title" style="font-size: 1.5rem">
+                      Muay Thai
+                    </h3>
+                    <p class="card-description">
+                      Thai boxing utilizing fists, elbows, knees, and shins -
+                      known as 'The Art of Eight Limbs.'
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="grid md:grid-cols-2">
+                  <div>
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-heart"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      Benefits for Beginners
+                    </h4>
+                    <ul class="benefits-list">
+                      <li>
+                        <i class="fas fa-bolt"></i> Exceptional cardio and
+                        conditioning
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Develops power and
+                        coordination
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Builds confidence and mental
+                        toughness
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Burns calories effectively
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Improves balance and timing
+                      </li>
+                    </ul>
+
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin: 2rem 0 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-bullseye"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      What to Expect
+                    </h4>
+                    <ul class="check-list">
+                      <li>
+                        <i class="fas fa-check-circle"></i> Dynamic warm-up
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Technique
+                        instruction and drilling
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Pad work with
+                        partners
+                      </li>
+                      <li><i class="fas fa-check-circle"></i> Bag training</li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Conditioning
+                        exercises
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-brain"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      For Beginners
+                    </h4>
+                    <p style="color: var(--text-gray); margin-bottom: 1.5rem">
+                      Start with basic stance, footwork, and fundamental
+                      strikes. We use pads and bags to practice techniques
+                      safely.
+                    </p>
+
+                    <div
+                      style="
+                        background: var(--primary-light);
+                        padding: 1.5rem;
+                        border-radius: 0.5rem;
+                      "
+                    >
+                      <h5 style="font-weight: 600; margin-bottom: 0.75rem">
+                        Ready to Start Muay Thai?
+                      </h5>
+                      <p
+                        style="
+                          font-size: 0.875rem;
+                          color: var(--text-gray);
+                          margin-bottom: 1rem;
+                        "
+                      >
+                        Join our beginner-friendly Muay Thai classes and
+                        experience the benefits for yourself.
+                      </p>
+                      <a
+                        href="contact.html"
+                        class="btn btn-primary"
+                        style="width: 100%"
+                      >
+                        Book Free Trial Class
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="taekwondo-content" class="tab-content">
+            <div class="card">
+              <div class="card-header">
+                <div style="display: flex; align-items: center; gap: 1rem">
+                  <div style="font-size: 3rem; color: #16a34a">
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                  <div style="text-align: left">
+                    <h3 class="card-title" style="font-size: 1.5rem">
+                      Taekwondo
+                    </h3>
+                    <p class="card-description">
+                      Korean martial art known for spectacular kicking
+                      techniques and Olympic sport competition.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="grid md:grid-cols-2">
+                  <div>
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-heart"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      Benefits for Beginners
+                    </h4>
+                    <ul class="benefits-list">
+                      <li>
+                        <i class="fas fa-bolt"></i> Develops exceptional
+                        flexibility
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Improves balance and
+                        precision
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Builds speed and agility
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Enhances mental discipline
+                      </li>
+                      <li>
+                        <i class="fas fa-bolt"></i> Provides Olympic sport
+                        pathway
+                      </li>
+                    </ul>
+
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin: 2rem 0 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-bullseye"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      What to Expect
+                    </h4>
+                    <ul class="check-list">
+                      <li>
+                        <i class="fas fa-check-circle"></i> Flexibility and
+                        stretching
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Basic kicks and
+                        techniques
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Forms (poomsae)
+                        practice
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Pad work and target
+                        practice
+                      </li>
+                      <li>
+                        <i class="fas fa-check-circle"></i> Balance and
+                        coordination drills
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4
+                      style="
+                        font-weight: 600;
+                        font-size: 1.125rem;
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                      "
+                    >
+                      <i
+                        class="fas fa-brain"
+                        style="color: var(--primary); margin-right: 0.5rem"
+                      ></i>
+                      For Beginners
+                    </h4>
+                    <p style="color: var(--text-gray); margin-bottom: 1.5rem">
+                      Taekwondo begins with basic kicks, blocks, and forms.
+                      Emphasis on proper technique and gradual progression
+                      through colored belt ranks.
+                    </p>
+
+                    <div
+                      style="
+                        background: var(--primary-light);
+                        padding: 1.5rem;
+                        border-radius: 0.5rem;
+                      "
+                    >
+                      <h5 style="font-weight: 600; margin-bottom: 0.75rem">
+                        Ready to Start Taekwondo?
+                      </h5>
+                      <p
+                        style="
+                          font-size: 0.875rem;
+                          color: var(--text-gray);
+                          margin-bottom: 1rem;
+                        "
+                      >
+                        Join our beginner-friendly Taekwondo classes and
+                        experience the benefits for yourself.
+                      </p>
+                      <a
+                        href="contact.html"
+                        class="btn btn-primary"
+                        style="width: 100%"
+                      >
+                        Book Free Trial Class
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Class Schedule -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Weekly Schedule</h2>
+          <p class="section-subtitle">
+            Find the perfect class time that fits your schedule. All beginner
+            classes are clearly marked.
+          </p>
+        </div>
+
+        <div
+          class="grid md:grid-cols-2"
+          style="max-width: 80rem; margin: 0 auto"
+        >
+          <div class="schedule-day">
+            <div class="schedule-header">
+              <h3>Monday</h3>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Morning Karate <span class="class-level">All Levels</span>
+                </h4>
+                <p class="class-instructor">Master Sarah Chen</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                6:00 AM - 7:00 AM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Karate Fundamentals <span class="class-level">Beginner</span>
+                </h4>
+                <p class="class-instructor">Master Sarah Chen</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                6:00 PM - 7:00 PM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Muay Thai Intro <span class="class-level">Beginner</span>
+                </h4>
+                <p class="class-instructor">Kru David Thompson</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                7:30 PM - 8:30 PM
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-day">
+            <div class="schedule-header">
+              <h3>Tuesday</h3>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  BJJ Open Mat <span class="class-level">All Levels</span>
+                </h4>
+                <p class="class-instructor">Prof. Mike Rodriguez</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                6:00 AM - 7:00 AM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>BJJ Basics <span class="class-level">Beginner</span></h4>
+                <p class="class-instructor">Prof. Mike Rodriguez</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                7:00 PM - 8:00 PM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Advanced BJJ
+                  <span class="class-level advanced">Advanced</span>
+                </h4>
+                <p class="class-instructor">Prof. Mike Rodriguez</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                8:00 PM - 9:00 PM
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-day">
+            <div class="schedule-header">
+              <h3>Wednesday</h3>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Karate Fundamentals <span class="class-level">Beginner</span>
+                </h4>
+                <p class="class-instructor">Master Sarah Chen</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                6:00 PM - 7:00 PM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Muay Thai Intro <span class="class-level">Beginner</span>
+                </h4>
+                <p class="class-instructor">Kru David Thompson</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                7:30 PM - 8:30 PM
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-day">
+            <div class="schedule-header">
+              <h3>Thursday</h3>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>BJJ Basics <span class="class-level">Beginner</span></h4>
+                <p class="class-instructor">Prof. Mike Rodriguez</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                7:00 PM - 8:00 PM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Taekwondo Fundamentals
+                  <span class="class-level">Beginner</span>
+                </h4>
+                <p class="class-instructor">Master Sarah Chen</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                8:00 PM - 9:00 PM
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-day">
+            <div class="schedule-header">
+              <h3>Friday</h3>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Mixed Martial Arts
+                  <span class="class-level intermediate">Intermediate</span>
+                </h4>
+                <p class="class-instructor">All Instructors</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                6:00 PM - 7:00 PM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Sparring Practice
+                  <span class="class-level intermediate">Intermediate+</span>
+                </h4>
+                <p class="class-instructor">All Instructors</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                7:30 PM - 8:30 PM
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-day">
+            <div class="schedule-header">
+              <h3>Saturday</h3>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Kids Karate (Ages 6-12) <span class="class-level">Youth</span>
+                </h4>
+                <p class="class-instructor">Master Sarah Chen</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                9:00 AM - 10:00 AM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Taekwondo Basics <span class="class-level">Beginner</span>
+                </h4>
+                <p class="class-instructor">Master Sarah Chen</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                10:00 AM - 11:00 AM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Family Classes <span class="class-level">All Ages</span>
+                </h4>
+                <p class="class-instructor">All Instructors</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                11:00 AM - 12:00 PM
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="class-info">
+                <h4>
+                  Open Mat (All Arts)
+                  <span class="class-level">All Levels</span>
+                </h4>
+                <p class="class-instructor">Self-Practice</p>
+              </div>
+              <div class="class-time">
+                <i class="fas fa-clock"></i>
+                2:00 PM - 4:00 PM
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+      <div class="container">
+        <h2 class="section-title">Ready to Begin Your Journey?</h2>
+        <p class="section-subtitle">
+          Don't wait to start building the confidence, fitness, and skills
+          you've always wanted. Your first class is completely free.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-secondary btn-lg"
+            >Book Free Trial Class</a
+          >
+          <a href="tel:5551234567" class="btn btn-outline-white btn-lg">
+            <i class="fas fa-phone"></i>
+            Call: (555) 123-4567
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div style="display: flex; align-items: center; gap: 0.75rem">
+            <!-- Tiger logo in modal -->
+            <img
+              src="https://cdn.builder.io/api/v1/assets/365e874df8b3403e8d126c85a1ad8754/red-tiger-logo-simple-silhouette-vector-illustration_10944730-0c5ec3?format=webp&width=800"
+              alt="Tiger Martial Arts Logo"
+              style="width: 24px; height: 24px; object-fit: contain"
+            />
+            <h2 id="modalTitle">Sign in to Tiger Martial Arts</h2>
+          </div>
+          <button class="modal-close" onclick="closeLoginModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="loginForm" class="auth-form">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="loginEmail"
+                  class="form-input"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="loginPassword"
+                  class="form-input"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%; margin-bottom: 1rem"
+              >
+                <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem"></i>
+                Sign In
+              </button>
+            </form>
+            <div class="auth-divider">
+              <span>New to Tiger Martial Arts?</span>
+            </div>
+            <button
+              onclick="switchToSignup()"
+              class="btn btn-outline"
+              style="width: 100%"
+            >
+              <i class="fas fa-user-plus" style="margin-right: 0.5rem"></i>
+              Create Account
+            </button>
+          </div>
+
+          <div id="signupForm" class="auth-form" style="display: none">
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="signupFirstName" class="form-label"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="signupFirstName"
+                    class="form-input"
+                    placeholder="First name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="signupLastName" class="form-label"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="signupLastName"
+                    class="form-input"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="signupEmail" class="form-label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="signupEmail"
+                  class="form-input"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  id="signupPassword"
+                  class="form-input"
+                  placeholder="Create a password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="signupConfirmPassword" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  id="signupConfirmPassword"
+                  class="form-input"
+                  placeholder="Confirm your password"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="width: 100%; margin-bottom: 1rem"
+              >
+                <i class="fas fa-user-plus" style="margin-right: 0.5rem"></i>
+                Create Account
+              </button>
+            </form>
+            <div class="auth-divider">
+              <span>Already have an account?</span>
+            </div>
+            <button
+              onclick="switchToLogin()"
+              class="btn btn-outline"
+              style="width: 100%"
+            >
+              <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem"></i>
+              Sign In Instead
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Tiger Martial Arts</h3>
+            <p>
+              Empowering beginners to discover their martial arts potential
+              through expert instruction and supportive community.
+            </p>
+          </div>
+
+          <div>
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="classes.html">Karate</a></li>
+              <li><a href="classes.html">Brazilian Jiu-Jitsu</a></li>
+              <li><a href="classes.html">Muay Thai</a></li>
+              <li><a href="classes.html">Taekwondo</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Contact Info</h4>
+            <div class="footer-contact">
+              <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Martial Arts Ave, Fitness City</span>
+              </div>
+              <div>
+                <i class="fas fa-phone"></i>
+                <span>(555) 123-4567</span>
+              </div>
+              <div>
+                <i class="fas fa-envelope"></i>
+                <span>info@ironwilldojo.com</span>
+              </div>
+              <div>
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 6AM-10PM, Sat-Sun: 8AM-8PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Tiger Martial Arts. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
